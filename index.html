@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+    <style>
+        #mainbox {
+            border: 3px solid rgb(241, 184, 184);
+            background-color: rgb(236, 194, 238);
+            width: 100%;
+            margin: auto;
+
+        }
+
+        #username {
+            border: none;
+            color: rgb(29, 23, 28);
+            /* border-radius: 10px; */
+            size: 5;
+            height: 30px;
+            /* margin-right: 10px; */
+            padding: 5px;
+            background-color: transparent;
+            border-bottom: 1px ;
+
+        }
+        /* cursor property */
+        #username:hover {
+            cursor: pointer;
+        }
+
+        #password {
+            background-color: transparent;
+            height: 30px;
+            border: none;
+        }
+
+        #email {
+            border: none;
+            height: 30px;
+            width: 150px;
+            background-color: transparent;
+        }
+
+        textarea {
+            border: none;
+            background-color: transparent;
+            color: rgb(10, 10, 10);
+        }
+        textarea:hover {
+            cursor: pointer;
+            background-color: azure;
+        }
+
+        .div01 {
+            display: flex;
+            align-items: center;
+            /* border: 2px solid; */
+            justify-content: space-evenly;
+
+            /* flex-wrap: wrap; */
+        }
+
+        #name {
+            /* border: 3px solid blueviolet; */
+            padding: 11px;
+
+        }
+
+        #pass {
+             /* border-left:3px solid ; */
+            padding: 15px;
+            padding-right: 50px;
+        }
+
+        .upperdiv img {
+            /* border: 2px solid; */
+            border-radius: 500px;
+            margin-left: -120px;
+            margin-top: 20px;
+        }
+.navbar {
+    display:flex;
+    justify-content: space-evenly;
+    /* border: 2px solid; */
+    background-color: rgb(230, 170, 245);
+}
+
+.left {
+/* background-color: rgb(190, 132, 5); */
+width: 40%;
+
+}
+.left h3 {
+    font-size: 30px;
+    padding: ;
+}
+#submit {
+    color: rgb(5, 5, 5);
+    background-color: rgb(126, 126, 177);
+    width: 100px;
+    height: 50px;
+}
+#submit:hover {
+    cursor: pointer;
+}
+        /* body {
+            width: 500px;
+            margin: auto;
+        } */
+    </style>
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="upperdiv">
+            <img src="/sylani.landscae.jpeg" alt="SMIT img" width="80px" height="50px">
+        </div>
+        <div class="left">
+            <h3><b>Rigistration Form:</b></h3>
+        </div>
+    </div>
+
+
+
+    <div id="mainbox">
+        <center>
+
+            <form id="form01" action="get">
+                <div class="div01">
+                    <div id="name">
+                        <p>
+                            <b>NAME:</b>
+                            <input id="username" type="text" name="username" maxlength="6" placeholder="enter name ">
+
+                        </p>
+                    </div>
+
+                    <br>
+                    <div id="pass">
+
+                        <p>
+
+                            <b>Password:</b>
+
+
+                            <input id="password" type="password" name="password" placeholder="enter geniune password ">
+                        </p>
+                    </div>
+                </div>
+                <br>
+                <p>
+                    <b>Email:</b>
+
+                    <input type="email" id="email" name="email" placeholder="enter your email ">
+                </p>
+                <br>
+                <p> <b>
+                        enter your comments.
+
+                    </b></p>
+                <textarea name="comment" id="comments" cols="30" rows="10" placeholder="comments here"> </textarea>
+                <p>
+                    <input id="submit" type="submit" value="submit">
+                </p>
+            </form>
+        </center>
+    </div>
+</body>
+
+</html>
